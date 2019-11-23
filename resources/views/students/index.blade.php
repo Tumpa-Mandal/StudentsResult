@@ -32,9 +32,9 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($students as $key=> $student)
+                                @foreach($students as $student)
                                     <tr>
-                                        <td>{{ ++$key }}</td>
+                                        <td>{{ $student->id }}</td>
                                         <td>{{$student->name}}</td>
                                         <td>{{$student->class}}</td>
                                         <td>{{$student->roll}}</td>

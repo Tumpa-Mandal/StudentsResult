@@ -102,7 +102,7 @@ class studentsController extends Controller
 
     public function viewResult(int $studnetId){
 
-        $student = Student::find($studnetId)
+        $student = Student::where('id', $studnetId)
                     ->with('results.subject')
                     ->first();
 

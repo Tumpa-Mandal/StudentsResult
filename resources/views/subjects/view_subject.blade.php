@@ -30,9 +30,9 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($subjects as $key=> $subject)
+                            @foreach($subjects as $subject)
                                 <tr>
-                                    <td>{{++$key}}</td>
+                                    <td>{{$subject->id}}</td>
                                     <td>{{$subject->name}}</td>
                                     <td>
                                         <a style="float: left; margin-left: 2px;" href="{{ url('/subjects/edit-subject/'.$subject->id) }}" class="btn btn-primary">Edit</a>
