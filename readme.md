@@ -37,5 +37,15 @@ Result is belongs to Students and Subjects
 
  - [x] Migrations 
  - [x] Relationships
- - [ ] Controller and Route
- - [ ] Views
+ - [x] Controller and Route
+ - [x] Views
+ 
+## Installation 
+
+Steps: 
+ - Clone the repo 
+ - Run `composer install` 
+ - Rename `.env.example` to `.env`
+ - Create a database and put valid credential to `.env`
+ - Run `php artisan migrate` 
+ - Run `php artisan serve` 
